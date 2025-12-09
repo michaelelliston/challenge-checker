@@ -1,5 +1,7 @@
 package utilities;
 
+import java.util.Objects;
+
 public class Person {
 
     private final String firstName;
@@ -22,5 +24,17 @@ public class Person {
 
     public int getAge() {
         return age;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+        if (obj == null || getClass() != obj.getClass()) return false;
+
+        Person other = (Person) obj;
+
+        return this.age == other.age &&
+                Objects.equals(this.getFirstName(), other.getFirstName()) &&
+                Objects.equals(this.getLastName(), other.getLastName());
     }
 }
