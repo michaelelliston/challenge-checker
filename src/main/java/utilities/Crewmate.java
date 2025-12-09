@@ -1,3 +1,5 @@
+package utilities;
+
 public class Crewmate {
 
     private final String name;
