@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class ChallengeChecker {
 
-    public ArrayList<Person> challengeOneAnswer() {
+    public static ArrayList<Person> challengeOneAnswer() {
 
         ArrayList<Person> unfilteredPeople = BehindTheScenes.initializePeople();
         ArrayList<Person> filteredPeople = new ArrayList<Person>();
@@ -18,17 +18,17 @@ public class ChallengeChecker {
         return filteredPeople;
     }
 
-    public boolean challengeOneVerificationSuccess() {
+    public static boolean challengeOneVerificationSuccess() {
         System.out.println("\nSuccess! Good work.\n");
         return true;
     }
 
-    public boolean challengeOneVerificationFailure() {
+    public static boolean challengeOneVerificationFailure() {
         System.out.println("\nThis did not result in a match! Try again.\n");
         return false;
     }
 
-    public ArrayList<String> challengeTwoAnswer() {
+    public static ArrayList<String> challengeTwoAnswer() {
 
         ArrayList<Person> people = BehindTheScenes.initializePeople();
         ArrayList<String> fullNames = new ArrayList<String>();
@@ -41,17 +41,17 @@ public class ChallengeChecker {
         return fullNames;
     }
 
-    public boolean challengeTwoVerificationSuccess() {
+    public static boolean challengeTwoVerificationSuccess() {
         System.out.println("\nSuccess! Good work.\n");
         return true;
     }
 
-    public boolean challengeTwoVerificationFailure() {
+    public static boolean challengeTwoVerificationFailure() {
         System.out.println("\nThis did not result in a match! Try again.\n");
         return false;
     }
 
-    public ArrayList<Crewmate> challengeThreeAnswer() {
+    public static ArrayList<Crewmate> challengeThreeAnswer() {
 
         ArrayList<Crewmate> unfilteredCrewmates = BehindTheScenes.initializeCrewmates();
         ArrayList<Crewmate> filteredCrewmates = new ArrayList<Crewmate>();
@@ -65,12 +65,12 @@ public class ChallengeChecker {
         return filteredCrewmates;
     }
 
-    public boolean challengeThreeVerificationSuccess() {
+    public static boolean challengeThreeVerificationSuccess() {
         System.out.println("\nSuccess! Good work.\n");
         return true;
     }
 
-    public boolean challengeThreeVerificationFailure() {
+    public static boolean challengeThreeVerificationFailure() {
         System.out.println("\nThis did not result in a match! Try again.\n");
         return false;
     }
