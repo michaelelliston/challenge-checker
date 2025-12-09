@@ -14,16 +14,15 @@ public class ChallengeChecker {
                 filteredPeople.add(p);
             }
         }
-
         return filteredPeople;
     }
 
-    public static boolean challengeOneVerificationSuccess() {
+    public static boolean challengeVerificationSuccess() {
         System.out.println("\nSuccess! Good work.\n");
         return true;
     }
 
-    public static boolean challengeOneVerificationFailure() {
+    public static boolean challengeVerificationFailure() {
         System.out.println("\nThis did not result in a match! Try again.\n");
         return false;
     }
@@ -37,18 +36,7 @@ public class ChallengeChecker {
             String fullName = p.getFirstName() + " " + p.getLastName();
             fullNames.add(fullName);
         }
-
         return fullNames;
-    }
-
-    public static boolean challengeTwoVerificationSuccess() {
-        System.out.println("\nSuccess! Good work.\n");
-        return true;
-    }
-
-    public static boolean challengeTwoVerificationFailure() {
-        System.out.println("\nThis did not result in a match! Try again.\n");
-        return false;
     }
 
     public static ArrayList<Crewmate> challengeThreeAnswer() {
@@ -61,17 +49,6 @@ public class ChallengeChecker {
                 filteredCrewmates.add(c);
             }
         }
-
         return filteredCrewmates;
-    }
-
-    public static boolean challengeThreeVerificationSuccess() {
-        System.out.println("\nSuccess! Good work.\n");
-        return true;
-    }
-
-    public static boolean challengeThreeVerificationFailure() {
-        System.out.println("\nThis did not result in a match! Try again.\n");
-        return false;
     }
 }
